@@ -66,7 +66,8 @@ Game.prototype.reset = function() {
 var player1 = new Player();
 var player2 = new Player();
 var theGame = new Game(player1, player2);
-
+theGame.player1.totalScore = 95;
+theGame.player2.totalScore = 95;
 // Front End Logic Goes Here:
 
 $(document).ready(function() {
@@ -79,12 +80,12 @@ $(document).ready(function() {
 
     switch ((theGame.turn % 2)) {
       case 0:
-        $(".player1Round").style.backgroundColor = "#f7c3ca"
-        $(".player1Round").style.backgroundColor = "#f7c3ca"
+        $(".player2TotalField").toggleClass("bg-light disabled")
+        $(".player1TotalField").toggleClass("pink")
       break;
       case 1:
-        $(".player1Round").style.backgroundColor = "#f7c3ca"
-        $(".player1Round").style.backgroundColor = "#f7c3ca"
+        $(".player1TotalField").toggleClass("bg-light disabled")
+        $(".player2TotalField").toggleClass("pink")
       break;
     }
   })
