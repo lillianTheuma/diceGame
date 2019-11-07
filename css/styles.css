@@ -41,6 +41,19 @@ body {
   padding-top: 80px;
 }
 
+.roll-dice {
+  padding-top: 100px;
+}
+
+.roll-dice .btn {
+  padding: 15px 70px;
+  background-color: #FE5696 !important;
+}
+
+.roll-dice .btn:hover {
+  color: white !important;
+}
+
 .roll-number {
   padding-top: 100px;
   padding-bottom: 100px;

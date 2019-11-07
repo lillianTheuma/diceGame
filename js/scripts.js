@@ -66,5 +66,26 @@ Game.prototype.reset = function() {
 var player1 = new Player();
 var player2 = new Player();
 var theGame = new Game(player1, player2);
-player1.totalScore = 2052;
-theGame.swapPlayer();
+
+// Front End Logic Goes Here:
+
+$(document).ready(function() {
+  $(document).click(function(event) {
+    $("#player1Round").html(theGame.player1.roundScore);
+    $("#player1Total").html(theGame.player1.totalScore);
+
+    $("#player2Round").html(theGame.player2.roundScore);
+    $("#player2Total").html(theGame.player2.totalScore);
+
+    switch ((theGame.turn % 2)) {
+      case 0:
+        $(".player1Round").style.backgroundColor = "#f7c3ca"
+        $(".player1Round").style.backgroundColor = "#f7c3ca"
+      break;
+      case 1:
+        $(".player1Round").style.backgroundColor = "#f7c3ca"
+        $(".player1Round").style.backgroundColor = "#f7c3ca"
+      break;
+    }
+  })
+});
