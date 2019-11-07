@@ -1,12 +1,17 @@
 .btn {
   padding: 15px 45px;
+  margin-left: 10px;
+  margin-right: 10px;
 
 }
-
 .container {
   text-align: center;
 }
 
-.tic-tac {
-  padding-top: 100px;
+.pig-dice {
+  padding-top: 80px;
+}
+
+.total {
+  padding-top: 40px;
 }
